@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;500;700&family=Orbitron:wght@400;500;800;900&display=swap');
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(/uts-pemweb/img/bg-ai.jpeg);
+    background-size: cover;
+}
+
+.typing-effect {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    white-space: nowrap;
+    font-weight: 400;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.typing-effect:hover {
+    color: blue;
+}
+.typing-effect::after {
+    content: "|";
+    position: absolute;
+    animation: ketik 1s steps(5, end) infinite;
+}
+
+@keyframes ketik {
+    0%, 100% {
+        transform: translateY(0); /* Memulai dari atas */
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(-20px); /* Perubahan posisi pada 25% animasi */
+        opacity: 0.5;
+    }
+    50% {
+        transform: translateY(-20px); /* Tahan posisi pada 50% animasi */
+        opacity: 0.5;
+    }
+    75% {
+        transform: translateY(0); /* Kembali ke posisi semula pada 75% animasi */
+        opacity: 1;
+    }
+}
+.card-body:hover {
+  animation: infinite;
+}
+.parallax {
+    background-image: url('background.jpg'); /* Gambar latar belakang */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .parallax-content {
+    text-align: center;
+    padding: 200px 0; /* Sesuaikan dengan preferensi Anda */
+    color: black;
+  }
+  
