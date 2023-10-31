@@ -3,7 +3,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-size: cover;
-    background-color: #226981;
+    background-color: #aliceblue;
 }
 
 .typing-effect {
@@ -64,8 +64,8 @@ body {
   }
   
   .container-fluid {
-    background-color: #EAD7BB;
+    background-color: aliceblue;
   }
   .container-xxl {
-    background-color: #113946;
+    background-color: aliceblue;
   }
