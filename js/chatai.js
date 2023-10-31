@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             showLoading();
             const names = `Ayo Sapa si user ${name} (walau nama aneh / ngasal, tetap saja sapa namanya!), Aku Ingin Bertanya Kepada Kamu: ${question}`;
-            const apiUrl = 'http://ai.primahaganta.my.id:25678/api/openai?q=' + encodeURI(names);
+            const apiUrl = 'https://aemt.me/openai?text=' + encodeURI(names);
             const errorTimeout = setTimeout(() => {
                 showError('Waktu permintaan habis. Silakan coba lagi.');
             }, 60000);
